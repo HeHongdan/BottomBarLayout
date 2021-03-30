@@ -2,28 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_gravity="center"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+
+
+    tools:background="#3333">
 
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+
+        tools:background="#3033">
 
         <ImageView
             android:id="@+id/iv_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            />
+
+            tools:layout_width="50dp"
+            tools:layout_height="50dp"
+            tools:background="#3303"/>
 
         <com.chaychan.library.MyLottieAnimationView
             android:id="@+id/lottieView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            />
+
+            tools:layout_width="45dp"
+            tools:layout_height="45dp"
+            tools:background="#3330"/>
 
         <TextView
             android:id="@+id/tv_unred_num"
@@ -37,7 +49,12 @@
             android:text="99+"
             android:textColor="@color/white"
             android:textSize="10sp"
-            android:visibility="gone" />
+            android:visibility="gone"
+
+            tools:text="123"
+            tools:textColor="#8800"
+            tools:visibility="visible"
+            tools:background="#3300"/>
 
         <TextView
             android:id="@+id/tv_msg"
@@ -50,7 +67,11 @@
             android:text="NEW"
             android:textColor="@color/white"
             android:textSize="6sp"
-            android:visibility="gone" />
+            android:visibility="gone"
+
+            tools:text="新"
+            tools:visibility="visible"
+            tools:background="#3030"/>
 
         <TextView
             android:id="@+id/tv_point"
@@ -61,7 +82,11 @@
             android:background="@drawable/shape_notify_point"
             android:gravity="center"
             android:textSize="6sp"
-            android:visibility="gone" />
+            android:visibility="gone"
+
+            tools:text="点"
+            tools:visibility="visible"
+            tools:background="#8800"/>
 
     </FrameLayout>
 
@@ -70,6 +95,8 @@
         android:id="@+id/tv_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+
+        tools:text="测试"
+        tools:background="#3333"/>
 
 </LinearLayout>
